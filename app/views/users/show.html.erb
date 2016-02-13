@@ -1,0 +1,31 @@
+<% if logged_in? %>
+<h1>
+  My Account
+</h1>
+<h3>
+  My Details
+</h3>
+  <%= @user.name %><br />
+  <%= @user.telephone %><br />
+  <%= @user.email %><br />
+  <a href="#">CHANGE</a> <br />
+  
+<h3>
+  My Payment methods
+</h3>
+  <%= @user.name %><br />
+  <a href="#">CHANGE</a> <br />
+  
+<h3>
+  My Main Address
+</h3>
+  <%= @user.address %><br />
+  <a href="#">CHANGE</a> 
+  <% else %>
+  <div class="center jumbotron">
+    <h1>Welcome to the Microposts</h1>
+
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  
+  <% end %>

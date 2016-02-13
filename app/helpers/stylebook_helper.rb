@@ -1,0 +1,2 @@
+module StylebookHelper
+end
